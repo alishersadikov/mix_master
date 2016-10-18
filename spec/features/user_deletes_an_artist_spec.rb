@@ -14,7 +14,6 @@ RSpec.feature "User visits the artist's show page" do
 
     click_on "#{artist1_name}"
     click_on "Delete"
-    save_and_open_page
     expect(page).to_not have_content "Bob Marley"
   end
 end

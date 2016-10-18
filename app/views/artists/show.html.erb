@@ -2,4 +2,5 @@
 <%= image_tag @artist.image_path %>
 <%= link_to "Edit", edit_artist_path(@artist) %><br />
 <%= link_to "Delete", artist_path(@artist), method: :delete %><br />
+<%= link_to "New song", new_artist_song_path(@artist) %>
 <%#= link_to "<< Back to Articles List", books_path %>
