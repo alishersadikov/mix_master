@@ -7,7 +7,6 @@ FactoryGirl.define do
     end
   end
 
-
   sequence :title, ["A", "C", "B"].cycle do |n|
     "#{n} Title"
   end

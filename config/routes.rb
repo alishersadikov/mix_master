@@ -6,5 +6,4 @@ Rails.application.routes.draw do
 
   resources :songs, only: [:show]
   resources :playlists
-
 end
