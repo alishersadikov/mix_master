@@ -1,0 +1,12 @@
+<%= form_for(@playlist) do |f| %>
+  <%= f.text_field :name %>
+<h3>The checked songs are in the playlist:</h3>
+  <% @songs.each do |song| %>
+    <div>
+      <%= check_box_tag(:song_ids, song.id, song.playlists.find_by(name: @playlist.name), :name => 'playlist[song_ids][]', id: "song-#{song.id}") %>
+      <%= song.title %>
+    </div>
+  <% end %>
+
+  <%= f.submit %>
+  <% end %>
